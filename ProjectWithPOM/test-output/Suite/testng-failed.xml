@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="edge"/>
+  <listeners>
+    <listener class-name="com.obsqura.ProjectWithPOM.Listerners"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.obsqura.ProjectWithPOM.SimpleFormDemoTest">
+        <methods>
+          <include name="checkAndVerifyTitleAndUrl"/>
+          <include name="enterMessageAndVerifySingleInputField"/>
+          <include name="enterMessageAndVerifyTwoInputField"/>
+          <include name="driverClose"/>
+          <include name="initBrowser"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- com.obsqura.ProjectWithPOM.SimpleFormDemoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
